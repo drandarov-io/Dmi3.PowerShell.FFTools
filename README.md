@@ -1,6 +1,12 @@
 # Dmi3.PowerShell.PowerTools
 
-This is a collection of PowerShell modules that I have created for various purposes. The modules are designed to be as simple as possible, with a focus on ease of use and readability. The modules are organized into separate folders, each containing a single module. Each module is a standalone script that can be run independently of the others.
+[![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/Dmi3.PowerShell.FFTools)](https://www.powershellgallery.com/packages/Dmi3.PowerShell.FFTools)
+[![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/Dmi3.PowerShell.FFTools)](https://www.powershellgallery.com/packages/Dmi3.PowerShell.FFTools)
+[![LICENSE](https://img.shields.io/github/license/drandarov-io/Dmi3.PowerShell.FFTools)](https://github.com/drandarov-io/Dmi3.PowerShell.FFTools/blob/master/LICENSE)
+
+<img src="assets/icon.png" alt="Project Icon" width="128" height="128">
+
+This module provides a set of concise and straight-forward commands building on top of ffmpeg to work with multimedia files.
 
 ## My other PowerShell modules
 - [Dmi3.PowerShell.PowerTools](https://github.com/drandarov-io/Dmi3.PowerShell.PowerTools)
@@ -8,9 +14,16 @@ This is a collection of PowerShell modules that I have created for various purpo
 - WIP: ~~[Dmi3.PowerShell.PowerFetch](https://github.com/drandarov-io/Dmi3.PowerShell.PowerFetch)~~
   - TODO: Image
 
+## Installation
+
+```powershell
+    Install-PSResource Dmi3.PowerShell.FFTools
+```
+
 ## TODOs
 - [ ] Return proper PowerShell objects
-- [ ] Add module icon
+- [ ] Fix CompatiblePSEditions in manifest
+- [ ] Create proper icon
 - [ ] Add images to the command (with carbon?)
 - [ ] Add tests
 
@@ -65,3 +78,8 @@ This is a collection of PowerShell modules that I have created for various purpo
 
 ```
 
+## Publishing
+
+```powershell
+Publish-PSResource .\Dmi3.PowerShell.FFTools\ -ApiKey (Get-Secret pwgallery_key -AsPlainText)
+```
